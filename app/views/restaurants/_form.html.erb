@@ -1,0 +1,17 @@
+<div class="row">
+
+  <%= simple_form_for @restaurant do |f| %>
+
+    <%= f.input :name, class: "form-control" %>
+    <br>
+    <%= f.input :category, collection: Restaurant::CATEGORY %>
+    <br>
+    <%= f.input :address, class: "form-control" %>
+    <br>
+    <%= f.input :phone_number, class: "form-control" %>
+<br>
+    <%= f.submit class: "btn btn-primary" %>
+
+  <% end %>
+
+</div>
